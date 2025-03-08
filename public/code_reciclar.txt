@@ -1,0 +1,15 @@
+<!-- Clientes visualizar -->
+        
+        <table border="1">
+
+            <tr>
+
+                <td>Numero</td>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Telefono</td>
+                <td>Email</td>
+
+            </tr>
+
+        </table>

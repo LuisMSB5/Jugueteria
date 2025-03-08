@@ -1,0 +1,89 @@
+drop database market;
+
+create database market;
+
+use market;
+
+create table clientes_datos(
+
+    numero_cliente int (10) primary key AUTO_INCREMENT,
+    nombre_cliente varchar (30),
+    apellido_cliente varchar (30),
+    telefono_cliente varchar (15),
+    email_cliente varchar (50),
+    contraseña_cliente varchar(50)
+
+);
+
+create table categorias(
+
+    codigo_categoria varchar (10) primary key,
+    nombre_categoria varchar (20),
+    descripcion_categoria varchar (50)
+
+);
+
+create table productos(
+
+    codigo_producto varchar (20) primary key,
+    nombre_producto varchar (30),
+    codigo_categoria varchar (10),
+    cantidad_producto int (10),
+    precio_producto int (10),
+    
+    /*relacion con la tabla categoria*/
+	index (codigo_categoria),
+    FOREIGN key (codigo_categoria) REFERENCES categorias (codigo_categoria)
+);
+
+create table venta(
+
+    codigo_venta varchar (10) primary key,
+    numero_cliente int (10),
+    productos_venta varchar (100),
+    cantidad_venta int (50),
+    total_venta int (20),
+    
+    /*creando las relaciones entre la tabla clientes datos*/
+	index (numero_cliente),
+    FOREIGN key (numero_cliente) REFERENCES clientes_datos (numero_cliente)
+    
+
+);
+
+
+/*insertar datos por si se requiere*/
+
+
+/*insertar en clientes*/
+
+insert into clientes_datos(nombre_cliente, apellido_cliente, telefono_cliente, email_cliente, contraseña_cliente) 
+value ("Luis", "Sandoval", 04124892593, "sandovalluismanuel522@gmail.com", "Lmsb.522")
+;
+
+
+/*insertar en categorias*/
+
+insert into categorias(codigo_categoria, nombre_categoria, descripcion_categoria) 
+value ("AAAA", "Ropa", "Para almacenar ropa de la ultima moda");
+
+
+/*insertando en  productos*/
+
+
+insert into productos(codigo_producto, nombre_producto, codigo_categoria, cantidad_producto, precio_producto)
+value ("0000", "Camisa marca pepe", "AAAA", 100, 20)
+
+;
+
+insert into productos(codigo_producto, nombre_producto, codigo_categoria, cantidad_producto, precio_producto)
+value ("0001", "Camisa marca ban", "AAAA", 100, 20)
+
+;
+
+/*insertando venta*/
+insert into venta(codigo_venta, numero_cliente, productos_venta, cantidad_venta, total_venta)
+value ("0000", 1, concat("camisa marca pepe", " - ", "camisa marca ban"), concat(2, " - ", 4), 40)
+;
+
+
