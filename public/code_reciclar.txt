@@ -1,15 +1,191 @@
+
 <!-- Clientes visualizar -->
-        
-        <table border="1">
 
-            <tr>
+        <div class="clientes_visualizar">        
+            <table border="1">
 
-                <td>Numero</td>
-                <td>Nombre</td>
-                <td>Apellido</td>
-                <td>Telefono</td>
-                <td>Email</td>
+                <tr>
 
-            </tr>
+                    <td>Numero</td>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Telefono</td>
+                    <td>Email</td>
 
-        </table>
+                </tr>
+
+            </table>
+        </div>
+
+
+
+
+
+        <!-- Clientes modificar -->
+        <div class="clientes_modificar">
+
+            <div class="columns">
+
+                <div>
+                    <p>Numero</p>
+                    <input type="text" id="numero" name="numero">
+                </div>
+
+                
+                <div>
+                    <p>Nombre</p>
+                    <input type="text" id="numero" name="numero">
+                </div>
+                
+                <div>
+                    <p>Apellido</p>
+                    <input type="text" id="numero" name="numero">
+                </div>
+
+            </div>
+
+            
+            <div class="columns2">
+                <div>
+                    <p>Email</p>
+                    <input type="email" id="numero" name="numero">
+                </div>
+
+                <div>
+                    <p>Telefono</p>
+                    <input type="text" id="numero" name="numero">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button>Eliminar</button>
+                <button>Modificar</button>
+            </div>
+            
+        </div>
+
+
+
+
+
+        <!-- Productos visualizar -->
+        <div class="productos_visualizar">
+
+            <table>
+
+                <tr>
+
+                    <td>codigo</td>
+                    <td>Nombre</td>
+                    <td>Categoria</td>
+                    <td>Cantidad</td>
+                    <td>Precio</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+
+
+
+
+           <!-- Productos modificar -->
+
+        <div class="productos_modificar">
+
+            <div class="columns1">
+
+                <div><p>Codigo</p> <input type="text"></div>
+                <div><p>Nombre</p> <input type="text"></div>
+                <div><p>Categoria</p> <input type="text"></div>
+
+            </div>
+
+            <div class="columns2">
+
+                <div><p>Cantidad</p> <input type="text"></div>
+                <div><p>Precio</p> <input type="text"></div>
+
+            </div>
+
+            <div class="buttons">
+                <button>Eliminar</button>
+                <button>Agregar</button>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- Categorias visualizar -->
+
+        <div class="categoria_visualizar">
+            
+            <table>
+
+                <tr>
+
+                    <td>Codigo</td>
+                    <td>Nombre</td>
+                    <td>Descripcion</td>
+            
+                </tr>
+
+            </table>
+
+        </div>
+
+
+
+        <!--Categoria Modificar -->
+         <div class="categoria_modificar">
+
+            <div class="column1">
+
+                <div> <p>Codigo de Categoria</p> <input type="text"></div>
+                <div> <p>Nombre de Categoria</p> <input type="text"></div>
+
+            </div>
+
+            <div class="column2">
+
+                <p>Descripcion de la Categoria</p>
+                <textarea name=""></textarea>
+
+            </div>
+
+            <div class="buttons">
+                <button>Eliminar</button>
+                <button>Agregar</button>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- Ventas visualizar -->
+
+        <div class="ventas_visualizar">
+
+            <table>
+
+                <tr>
+
+                    <td>Codigo</td>
+                    <td>Numero de Cliente</td>
+                    <td>Productos de la compra</td>
+                    <td>Cantidad de productos</td>
+                    <td>Costo total</td>
+
+                </tr>
+
+            </table>
+
+        </div>

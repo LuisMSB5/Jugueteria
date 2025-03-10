@@ -1,0 +1,181 @@
+nav{
+
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10%;
+    grid-gap: 2%;
+    margin-left: 2%;
+    margin-bottom: -1%;
+
+}
+
+nav p{
+
+    text-align: center;
+    padding: 7%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+#blue{
+
+    background-color: #38b6ff;
+
+}
+
+#blue:hover{
+
+    background-color: #005af7;
+
+}
+
+#green{
+
+    background-color: #00bf63;
+
+}
+
+
+#green:hover{
+
+    background-color: #006f1f;
+
+}
+
+#yellow{
+
+    background-color: #d559ff;
+
+}
+
+#yellow:hover{
+
+    background-color: #7a00a2;
+
+}
+
+#red{
+
+    background-color: #ff3131;
+
+}
+
+#red:hover{
+
+    background-color: #b21a1a;
+
+}
+
+form{
+
+    background-color: #fff8e1;
+    height: 600px;
+    width: 90%;
+    margin-left: 2%;
+    padding: 2%;
+    text-align: center;
+
+}
+
+.clientes_visualizar table{
+
+    border: none;
+    background-color: white;
+    width: 100%;
+
+}
+
+.clientes_visualizar td{
+
+    border: solid #005af7 1px;
+    padding: 1%;
+    color: #38b6ff;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/* clientes modificar */
+.clientes_modificar{
+
+    margin-top: 2%;
+
+}
+
+.clientes_modificar .columns{
+
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #38b6ff;
+}
+
+.clientes_modificar .columns2{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 30px;
+    margin-top: 8%;
+    font-weight: bolder;
+    color: #38b6ff;
+
+}
+
+.clientes_modificar .columns input, .columns2 input{
+
+    font-size: 20px;
+    padding-bottom: 2%;
+    text-align: center;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #fff8e1;
+    cursor: pointer;
+    color: #38b6ff;
+    font-weight: bolder;
+    border-bottom: solid 2px #38b6ff;
+    letter-spacing: 1px;
+
+}
+
+.clientes_modificar .columns input:hover{
+
+    border-bottom: solid 3px #005af7;
+
+}
+
+.clientes_modificar .columns2 input:hover{
+
+    border-bottom: solid 3px #005af7;
+
+}
+
+.clientes_modificar .buttons{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%;
+
+}
+
+.clientes_modificar .buttons button{
+
+    width: 25%;
+    margin-left: 35%;
+    background-color: #38b6ff;
+    border: none;
+    color: white;
+    padding: 2%;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+
+.clientes_modificar .buttons button:hover{
+
+    background-color: #005af7;
+
+}

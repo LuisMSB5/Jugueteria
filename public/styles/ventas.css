@@ -1,0 +1,111 @@
+/*Ventas visualizar*/
+
+.ventas_visualizar table{
+
+    background-color: white;
+    width: 100%;
+    
+}
+
+.ventas_visualizar td{
+
+    padding: 1%;
+    color: #ff3131;
+    font-size: 20px;
+    font-weight: bolder;
+    border: solid #b21a1a 2px;
+
+}
+
+
+/*Ventas modificar*/
+
+.ventas_modificar .column1{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.ventas_modificar .column1 p, .costo_total p{
+
+    color: #ff3131;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+.ventas_modificar .column1 input, .costo_total input{
+
+    width: 50%;
+    padding: 1%;
+    font-size: 20px;
+    text-align: center;
+    color: #ff3131;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #ff3131 2px;
+    background-color: #fff8e1;
+    outline: none;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: -2%;
+
+}
+
+.ventas_modificar .column1 input:hover{
+
+    border-bottom: #b21a1a 3px solid;
+
+}
+
+.ventas_modificar .column1 textarea{
+
+    color: #ff3131;
+    width: 50%;
+    resize: none;
+    padding: 1%;
+    height: 80px;
+    border: 2px solid #ff3131;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.ventas_modificar .column1 textarea:hover{
+
+    background-color: #ff3131;
+    color: white;
+
+}
+
+
+.costo_total input{
+
+    width: 25%;
+
+}
+
+.buttons button{
+
+    background-color: #ff3131;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 1%;
+    width: 15%;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top: 5%;
+    border: none;
+}
+
+.buttons button:hover{
+
+    background-color: #b21a1a;
+
+}

@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jugueteria</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/clientes.css">
+    <link rel="stylesheet" href="styles/productos.css">
+    <link rel="stylesheet" href="styles/categorias.css">
+    <link rel="stylesheet" href="styles/ventas.css">
+
 </head>
+
 <body>
+
 
     <!-- contenedor de los botones principales que se usaran para el cambio de pantalla-->
 
@@ -25,46 +32,52 @@
     <!-- El Formulario contendra dentro suyo todos los elementos que se mostrara variando el boton que se presione de parte del nav-->
     <form action="">
 
-        <!-- Clientes modificar -->
-        <div class="clientes_modificar">
+        <!-- Ventas modificar -->
 
-            <div class="columns">
+        <div class="ventas_modificar">
+
+            <div class="column1">
 
                 <div>
-                    <p>Numero</p>
-                    <input type="number" id="numero" name="numero">
-                </div>
-
-                
-                <div>
-                    <p>Apellido</p>
-                    <input type="number" id="numero" name="numero">
+                    <p>Codigo de venta</p>
+                    <input type="text">
                 </div>
                 
                 <div>
-                    <p>Telefono</p>
-                    <input type="number" id="numero" name="numero">
+                    <p>Numero de Cliente</p>
+                    <input type="number">
+                </div>   
+
+                <div>
+                    <p>Productos</p>
+                    <textarea name="" id=""></textarea>
                 </div>
+                    
+                <div>
+                    <p>Cantidad de los productos</p>
+                    <textarea name="" id=""></textarea>
+                </div>
+                    
 
             </div>
 
             
+            <div class="costo_total">
+
+                <p>Costo total</p>
+                <input type="text" name="" id="">
+
+            </div>
+    
+            <div class="buttons">
+
+                <button>Eliminar</button>
+                <button>Guardar</button>
+
+            </div>
+
             
         </div>
-
-        
-
-        
-        <!-- Productos visualizar -->
-        <!-- Productos modificar -->
-
-        
-        <!-- Categorias visualizar -->
-        <!-- Categorias modificar -->
-
-        
-        <!-- Ventas visualizar -->
-        <!-- Ventas modificar -->
 
     </form>
     

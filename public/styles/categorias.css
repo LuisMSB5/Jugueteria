@@ -1,0 +1,113 @@
+/*categoria visualizar*/
+
+.categoria_visualizar table{
+
+    border: none;
+    background-color: white;
+    width: 100%;
+
+}
+
+.categoria_visualizar td{
+
+    border: solid #7a00a2 1px;
+    padding: 1%;
+    color: #d559ff;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/*categoria Modificar*/
+
+.categoria_modificar .column1{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%;
+
+}
+
+.categoria_modificar .column1 p, .column2 p{
+
+    color: #d559ff;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+.categoria_modificar .column1 input{
+
+    color: #d559ff;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    text-align: center;
+    padding-bottom: 2%;
+    border-bottom: #d559ff solid 2px;
+    background-color: #fff8e1;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.categoria_modificar .column1 input:hover{
+
+    border-bottom: #7a00a2 solid 2px;
+
+}
+
+.categoria_modificar .column2 {
+    margin-top: 5%;
+}
+
+.categoria_modificar .column2 textarea{
+
+    background-color: #d559ff;
+    font-size: 20px;
+    color: white;
+    resize: none;
+    width: 50%;
+    padding: 2%;
+    height: 70px;
+    font-weight: bolder;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.categoria_modificar .column2 textarea:hover{
+
+    background-color: #7a00a2;
+
+}
+
+.categoria_modificar .buttons{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%;
+
+}
+
+.categoria_modificar .buttons button{
+
+    width: 25%;
+    margin-left: 35%;
+    background-color: #d559ff;
+    border: none;
+    color: white;
+    padding: 2%;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+
+.categoria_modificar .buttons button:hover{
+
+    background-color: #7a00a2;
+
+}
