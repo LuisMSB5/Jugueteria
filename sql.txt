@@ -1,17 +1,16 @@
-drop database market;
+drop database jugueteria;
 
-create database market;
+create database jugueteria;
 
-use market;
+use jugueteria;
 
 create table clientes_datos(
 
-    numero_cliente int (10) primary key AUTO_INCREMENT,
+    codigo_cliente varchar (10) primary key,
     nombre_cliente varchar (30),
     apellido_cliente varchar (30),
     telefono_cliente varchar (15),
-    email_cliente varchar (50),
-    contraseña_cliente varchar(50)
+    email_cliente varchar (50)
 
 );
 
@@ -38,52 +37,34 @@ create table productos(
 
 create table venta(
 
-    codigo_venta varchar (10) primary key,
-    numero_cliente int (10),
-    productos_venta varchar (100),
+    numero_venta int (10) primary key AUTO_INCREMENT,
+    codigo_cliente varchar (10),
+    codigo_producto varchar (100),
     cantidad_venta int (50),
+    fecha_venta varchar (50),
     total_venta int (20),
     
     /*creando las relaciones entre la tabla clientes datos*/
-	index (numero_cliente),
-    FOREIGN key (numero_cliente) REFERENCES clientes_datos (numero_cliente)
+	index (codigo_cliente),
+    FOREIGN key (codigo_cliente) REFERENCES clientes_datos (codigo_cliente),
     
-
+    /*creando las relaciones entre la tabla clientes datos*/
+	index (codigo_producto),
+    FOREIGN key (codigo_producto) REFERENCES productos (codigo_producto)
+    
 );
 
 
-/*insertar datos por si se requiere*/
+/*insertando los datos en la tabla de la base de datos*/
 
+insert into clientes_datos(codigo_cliente, nombre_cliente, apellido_cliente, telefono_cliente, email_cliente) 
+value ("0000", "Luis", "Sandoval", "04124892593", "sandoval@gmail.com");
 
-/*insertar en clientes*/
+insert into categorias (codigo_categoria, nombre_categoria, descripcion_categoria)
+value ("0000", "+12", "Juguetes para niños mayores de 12 años");
 
-insert into clientes_datos(nombre_cliente, apellido_cliente, telefono_cliente, email_cliente, contraseña_cliente) 
-value ("Luis", "Sandoval", 04124892593, "sandovalluismanuel522@gmail.com", "Lmsb.522")
-;
+insert into productos (codigo_producto, nombre_producto, codigo_categoria, cantidad_producto, precio_producto)
+value ("AAAA", "Rompecabeza", "0000", 20, 200);
 
-
-/*insertar en categorias*/
-
-insert into categorias(codigo_categoria, nombre_categoria, descripcion_categoria) 
-value ("AAAA", "Ropa", "Para almacenar ropa de la ultima moda");
-
-
-/*insertando en  productos*/
-
-
-insert into productos(codigo_producto, nombre_producto, codigo_categoria, cantidad_producto, precio_producto)
-value ("0000", "Camisa marca pepe", "AAAA", 100, 20)
-
-;
-
-insert into productos(codigo_producto, nombre_producto, codigo_categoria, cantidad_producto, precio_producto)
-value ("0001", "Camisa marca ban", "AAAA", 100, 20)
-
-;
-
-/*insertando venta*/
-insert into venta(codigo_venta, numero_cliente, productos_venta, cantidad_venta, total_venta)
-value ("0000", 1, concat("camisa marca pepe", " - ", "camisa marca ban"), concat(2, " - ", 4), 40)
-;
-
-
+insert into venta (codigo_cliente, codigo_producto, cantidad_venta, fecha_venta, total_venta) 
+value ("0000", "AAAA", 2, "01/01/2000", 400);

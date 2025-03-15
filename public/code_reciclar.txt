@@ -1,25 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<!-- Clientes visualizar -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugueteria</title>
+    <link rel="stylesheet" href="styles/clientes.css">
+    <link rel="stylesheet" href="styles/productos.css">
+    <link rel="stylesheet" href="styles/categorias.css">
+    <link rel="stylesheet" href="styles/ventas.css">
+
+</head>
+
+<body>
+
+
+    <!-- contenedor de los botones principales que se usaran para el cambio de pantalla-->
+
+    <nav>
+
+        <!-- Estos botons cuando tenga el curso encima el texto cambiara a modificar
+         y cuando se presione 2 veces, este cambiara el tipo de la web-->
+
+        <p id="blue" class="clientes">Clientes</p>
+        <p id="green" class="productos">Productos</p>
+        <p id="yellow" class="categorias">Categorias</p>
+        <p id="red" class="ventas">Ventas</p>
+
+    </nav>
+
+    <!-- El Formulario contendra dentro suyo todos los elementos que se mostrara variando el boton que se presione de parte del nav-->
+    <form action="form" id="form">
+            
+        <!-- Clientes visualizar -->
 
         <div class="clientes_visualizar">        
             <table border="1">
 
                 <tr>
-
-                    <td>Numero</td>
-                    <td>Nombre</td>
-                    <td>Apellido</td>
-                    <td>Telefono</td>
-                    <td>Email</td>
-
+                    <td>Numero</td> <td>Nombre</td> <td>Apellido</td> <td>Telefono</td> <td>Email</td>
                 </tr>
 
             </table>
         </div>
-
-
-
-
 
         <!-- Clientes modificar -->
         <div class="clientes_modificar">
@@ -27,46 +50,37 @@
             <div class="columns">
 
                 <div>
-                    <p>Numero</p>
-                    <input type="text" id="numero" name="numero">
+                    <p>Numero</p> <input type="text" id="numero" name="numero">
                 </div>
-
-                
+            
+                            
                 <div>
-                    <p>Nombre</p>
-                    <input type="text" id="numero" name="numero">
+                    <p>Nombre</p> <input type="text" id="numero" name="numero">
                 </div>
-                
+                            
                 <div>
-                    <p>Apellido</p>
-                    <input type="text" id="numero" name="numero">
+                    <p>Apellido</p> <input type="text" id="numero" name="numero">
                 </div>
 
             </div>
-
-            
+        
+                    
             <div class="columns2">
                 <div>
-                    <p>Email</p>
-                    <input type="email" id="numero" name="numero">
+                    <p>Email</p> <input type="email" id="numero" name="numero">
                 </div>
 
                 <div>
-                    <p>Telefono</p>
-                    <input type="text" id="numero" name="numero">
+                    <p>Telefono</p> <input type="text" id="numero" name="numero">
                 </div>
             </div>
 
             <div class="buttons">
-                <button>Eliminar</button>
-                <button>Modificar</button>
+                <button class="eliminar_cliente">Eliminar</button> <button class="agregar_cliente">Modificar</button>
             </div>
-            
+                    
         </div>
-
-
-
-
+        
 
         <!-- Productos visualizar -->
         <div class="productos_visualizar">
@@ -74,13 +88,7 @@
             <table>
 
                 <tr>
-
-                    <td>codigo</td>
-                    <td>Nombre</td>
-                    <td>Categoria</td>
-                    <td>Cantidad</td>
-                    <td>Precio</td>
-
+                    <td>codigo</td> <td>Nombre</td> <td>Categoria</td> <td>Cantidad</td> <td>Precio</td>
                 </tr>
 
             </table>
@@ -88,11 +96,7 @@
         </div>
 
 
-
-
-
-           <!-- Productos modificar -->
-
+        <!-- Productos modificar -->
         <div class="productos_modificar">
 
             <div class="columns1">
@@ -119,9 +123,6 @@
 
 
 
-
-
-
         <!-- Categorias visualizar -->
 
         <div class="categoria_visualizar">
@@ -129,47 +130,33 @@
             <table>
 
                 <tr>
-
-                    <td>Codigo</td>
-                    <td>Nombre</td>
-                    <td>Descripcion</td>
-            
+                    <td>Codigo</td> <td>Nombre</td> <td>Descripcion</td>
                 </tr>
 
             </table>
 
         </div>
 
-
-
+        
+        
         <!--Categoria Modificar -->
          <div class="categoria_modificar">
 
             <div class="column1">
-
                 <div> <p>Codigo de Categoria</p> <input type="text"></div>
                 <div> <p>Nombre de Categoria</p> <input type="text"></div>
-
             </div>
 
             <div class="column2">
-
-                <p>Descripcion de la Categoria</p>
-                <textarea name=""></textarea>
-
+                <p>Descripcion de la Categoria</p> <textarea name=""></textarea>
             </div>
 
             <div class="buttons">
-                <button>Eliminar</button>
-                <button>Agregar</button>
+                <button>Eliminar</button> <button>Agregar</button>
             </div>
 
         </div>
-
-
-
-
-
+        
         <!-- Ventas visualizar -->
 
         <div class="ventas_visualizar">
@@ -178,65 +165,56 @@
 
                 <tr>
 
-                    <td>Codigo</td>
-                    <td>Numero de Cliente</td>
-                    <td>Productos de la compra</td>
-                    <td>Cantidad de productos</td>
-                    <td>Costo total</td>
+                    <td>Codigo</td> <td>Numero de Cliente</td> <td>Productos de la compra</td> <td>Cantidad de productos</td> <td>Costo total</td>
 
                 </tr>
 
             </table>
 
         </div>
-
-
-
-
+        
+        
 
         <!-- Ventas modificar -->
-
         <div class="ventas_modificar">
 
             <div class="column1">
 
                 <div>
-                    <p>Codigo de venta</p>
-                    <input type="text">
+                    <p>Codigo de venta</p> <input type="text">
                 </div>
                 
                 <div>
-                    <p>Numero de Cliente</p>
-                    <input type="number">
+                    <p>Numero de Cliente</p> <input type="number">
                 </div>   
 
                 <div>
-                    <p>Productos</p>
-                    <textarea name="" id=""></textarea>
+                    <p>Productos</p> <textarea name="" id=""></textarea>
                 </div>
                     
                 <div>
-                    <p>Cantidad de los productos</p>
-                    <textarea name="" id=""></textarea>
+                    <p>Cantidad de los productos</p> <textarea name="" id=""></textarea>
                 </div>
-                    
-
+                
             </div>
 
             
             <div class="costo_total">
-
-                <p>Costo total</p>
-                <input type="text" name="" id="">
-
+                <p>Costo total</p> <input type="text" name="" id="">
             </div>
     
             <div class="buttons">
-
-                <button>Eliminar</button>
-                <button>Guardar</button>
-
+                <button>Eliminar</button><button>Guardar</button>
             </div>
 
             
         </div>
+
+    </form>
+    
+</body>
+
+<!-- Scripts de javascript -->
+ <script src="scripts/cambio_pantalla.js"></script>
+
+</html>

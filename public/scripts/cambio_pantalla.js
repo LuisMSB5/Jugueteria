@@ -36,7 +36,7 @@ vv.style.display = "none";
 vm.style.display = "none";
 
 //contadores para los 4 elementos para poder acceder al modo de modificacion
-var m1 = 0;
+var m1 = 1;
 var m2 = 0;
 var m3 = 0;
 var m4 = 0;

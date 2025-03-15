@@ -30,7 +30,7 @@
     </nav>
 
     <!-- El Formulario contendra dentro suyo todos los elementos que se mostrara variando el boton que se presione de parte del nav-->
-    <form action="">
+    <form action="/submit" method="POST">
             
         <!-- Clientes visualizar -->
 
@@ -38,7 +38,7 @@
             <table border="1">
 
                 <tr>
-                    <td>Numero</td> <td>Nombre</td> <td>Apellido</td> <td>Telefono</td> <td>Email</td>
+                    <td>Codigo</td> <td>Nombre</td> <td>Apellido</td> <td>Telefono</td> <td>Email</td>
                 </tr>
 
             </table>
@@ -50,16 +50,16 @@
             <div class="columns">
 
                 <div>
-                    <p>Numero</p> <input type="text" id="numero" name="numero">
+                    <p>Codigo</p> <input type="text" id="numero" name="codigo_cliente">
                 </div>
             
                             
                 <div>
-                    <p>Nombre</p> <input type="text" id="numero" name="numero">
+                    <p>Nombre</p> <input type="text" id="numero" name="nombre_cliente">
                 </div>
                             
                 <div>
-                    <p>Apellido</p> <input type="text" id="numero" name="numero">
+                    <p>Apellido</p> <input type="text" id="numero" name="apellido_cliente">
                 </div>
 
             </div>
@@ -67,16 +67,16 @@
                     
             <div class="columns2">
                 <div>
-                    <p>Email</p> <input type="email" id="numero" name="numero">
+                    <p>Email</p> <input type="email" id="numero" name="email_cliente">
                 </div>
 
                 <div>
-                    <p>Telefono</p> <input type="text" id="numero" name="numero">
+                    <p>Telefono</p> <input type="text" id="numero" name="telefono_cliente">
                 </div>
             </div>
 
             <div class="buttons">
-                <button>Eliminar</button> <button>Modificar</button>
+                <button type="submit" name="clientes" value="eliminar">Eliminar</button> <button type="submit" name="clientes" value="guardar">Modificar</button>
             </div>
                     
         </div>
@@ -101,22 +101,21 @@
 
             <div class="columns1">
 
-                <div><p>Codigo</p> <input type="text"></div>
-                <div><p>Nombre</p> <input type="text"></div>
-                <div><p>Categoria</p> <input type="text"></div>
+                <div><p>Codigo</p> <input type="text" name="codigo_productos"></div>
+                <div><p>Nombre</p> <input type="text" name="nombre_productos"></div>
+                <div><p>Codigo de Categoria</p> <input type="text" name="categoria_productos"></div>
 
             </div>
 
             <div class="columns2">
 
-                <div><p>Cantidad</p> <input type="text"></div>
-                <div><p>Precio</p> <input type="text"></div>
+                <div><p>Cantidad</p> <input type="text" name="cantidad_productos"></div>
+                <div><p>Precio</p> <input type="text" name="precio_productos"></div>
 
             </div>
 
             <div class="buttons">
-                <button>Eliminar</button>
-                <button>Agregar</button>
+                <button type="submit" name="productos" value="eliminar">Eliminar</button> <button type="submit" name="productos" value="guardar">Modificar</button>
             </div>
 
         </div>
@@ -143,16 +142,16 @@
          <div class="categoria_modificar">
 
             <div class="column1">
-                <div> <p>Codigo de Categoria</p> <input type="text"></div>
-                <div> <p>Nombre de Categoria</p> <input type="text"></div>
+                <div> <p>Codigo de Categoria</p> <input type="text" name="codigo_categoria"></div>
+                <div> <p>Nombre de Categoria</p> <input type="text" name="nombre_categoria"></div>
             </div>
 
             <div class="column2">
-                <p>Descripcion de la Categoria</p> <textarea name=""></textarea>
+                <p>Descripcion de la Categoria</p> <textarea name="descripcion_categoria"></textarea>
             </div>
 
             <div class="buttons">
-                <button>Eliminar</button> <button>Agregar</button>
+                <button type="submit" name="categorias" value="eliminar">Eliminar</button> <button type="submit" name="categorias" value="guardar">Modificar</button>
             </div>
 
         </div>
@@ -165,7 +164,7 @@
 
                 <tr>
 
-                    <td>Codigo</td> <td>Numero de Cliente</td> <td>Productos de la compra</td> <td>Cantidad de productos</td> <td>Costo total</td>
+                    <td>Numero</td> <td>Numero de Cliente</td> <td>Productos de la compra</td> <td>Cantidad de productos</td> <td>Costo total</td>
 
                 </tr>
 
@@ -181,30 +180,30 @@
             <div class="column1">
 
                 <div>
-                    <p>Codigo de venta</p> <input type="text">
+                    <p>Fecha de la venta</p> <input type="date" name="fecha_venta">
                 </div>
                 
                 <div>
-                    <p>Numero de Cliente</p> <input type="number">
+                    <p>Codigo del Cliente</p> <input type="text" name="cliente_venta">
                 </div>   
 
                 <div>
-                    <p>Productos</p> <textarea name="" id=""></textarea>
+                    <p>Producto</p> <input type="text" name="producto_venta" id="">
                 </div>
                     
                 <div>
-                    <p>Cantidad de los productos</p> <textarea name="" id=""></textarea>
+                    <p>Cantidad</p> <input name="cantidad_venta">
                 </div>
                 
             </div>
 
             
             <div class="costo_total">
-                <p>Costo total</p> <input type="text" name="" id="">
+                <p>Costo total</p> <input type="text" name="costo_venta" id="">
             </div>
     
             <div class="buttons">
-                <button>Eliminar</button><button>Guardar</button>
+                <button type="submit" name="ventas" value="eliminar">Eliminar</button> <button type="submit" name="ventas" value="guardar">Modificar</button>
             </div>
 
             
