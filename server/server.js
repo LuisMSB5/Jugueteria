@@ -23,19 +23,33 @@ app.post('/submit', (req, res) => {
     //condicion de clientes
     switch (clientes) {
         case 'guardar':
-            res.send(`<h1 class = 'mensaje_exito'> Enviado con exito </h1>`);
+            //res.send(`<h1 class = 'mensaje_exito'> Enviado con exito </h1>`);
             const agregar = connection.execute(`insert into clientes_datos(codigo_cliente, nombre_cliente, apellido_cliente, telefono_cliente, email_cliente) value ("${codigo_cliente}", "${nombre_cliente}", "${apellido_cliente}", "${email_cliente}", "${telefono_cliente}");`);
             break;
      
      
         case 'eliminar':
-            res.send(`<h1>Datos eliminados</h1><p>Nombre: ${codigo_cliente}</p>`);
+            //res.send(`<h1>Datos eliminados</h1><p>Nombre: ${codigo_cliente}</p>`);
             const eliminar = connection.execute(`DELETE FROM clientes_datos WHERE codigo_cliente = '${codigo_cliente}';`);
             console.log("eliminado con exito");
             break;
     }
 
+    //mostrar un mensaje de la base de datos a la web
+    const query = "SELECT * FROM clientes_datos";
+    connection.query(query, (err, result) => {
 
+        if (err){
+
+            console.error("Error en la muestra de la base de datos");
+
+        }
+
+        console.log(result);
+
+        res.send(`<h1 class = 'mensaje_exito'> ${result[2].nombre_cliente} </h1>`);
+
+    });
     
     //datos del formulario de productos
     const { codigo_productos, nombre_productos, categoria_productos, cantidad_productos, precio_productos, productos } = req.body;
@@ -115,6 +129,13 @@ connection.connect(error => {
     console.log("Conexion a la base de datos de manera exitosa");
 
 });
+
+function mostrar(){
+
+    
+
+}
+
 
 // Iniciar el servidor
 app.listen(PORT, () => {
