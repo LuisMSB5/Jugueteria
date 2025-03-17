@@ -1,0 +1,11 @@
+Este es todo el proyecto, esta realizado con Node js express, y este esta compuesto por 2 carpetas y un archivo adicional que se llama sql
+la carpeta public contiene todos los archivos de css y js que permite alteral la visualizacion de la web
+la carpeta server tiene todos los modulos que se necesitan y el archivo del servidor principal
+y el archivo sql.txt contiene todo el codigo sql para crear una base de datos, es necesario crear esta base para que la web funcione
+
+para dar inicio a la web es necesario acceder a la terminal y dirigirse hacia la carpeta server
+luego es necesario usar el comando node server.js (es necesario que el equipo tenga instalalo node js para iniciarlo)
+
+La pagina se basa en mostrar, almacenar y eliminar registros de la base de datos, (ojo, cuando se vayan a mostrar los registros de la base de datos
+en la tablita inicial, este se actualizara solo cuando se reinicie el servidor, ya que las variables que lo compone el codigo se inicia una sola vez
+y no da la salida visual varias veces)
